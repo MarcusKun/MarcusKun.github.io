@@ -13,11 +13,11 @@ if (!String.prototype.format) {
 
 
 jQuery(document).ready(function($) {
-	$("*").removeAttr('contenteditable');
     $(".left-label").attr('contenteditable', 'true');
     $(".label-value").attr('contenteditable', 'true');
     $(".info-title").attr('contenteditable', 'true');
     $("h3").attr('contenteditable', 'true');
+	$("h3").attr('clickable', 'false');
     $("p").attr('contenteditable', 'true');
     $(".right-paragraph p").attr('contenteditable', 'true');
     $("#username").attr('contenteditable', 'true');
@@ -46,25 +46,7 @@ jQuery(document).ready(function($) {
         $(".weixin img").attr('src', $("#weixin-url").val());
     });
 
-    $('.info-header').hover(function() {
-        /* Stuff to do when the mouse enters the element */
-        $(this).children('.unit-remove').css('visibility', 'visible');
-        $(this).children('.item-add').css('visibility', 'visible');
-
-    }, function() {
-        /* Stuff to do when the mouse leaves the element */
-        $(this).children('.unit-remove').css('visibility', 'hidden');
-        $(this).children('.item-add').css('visibility', 'hidden');
-    });
-
-    $('.info-unit ul li').hover(function() {
-        /* Stuff to do when the mouse enters the element */
-        $(this).children('.item-remove').css('visibility', 'visible');
-
-    }, function() {
-        /* Stuff to do when the mouse leaves the element */
-        $(this).children('.item-remove').css('visibility', 'hidden');
-    });
+    
 
     $('.unit-remove').click(function(event) {
         $(this).closest(".info-unit").remove();
@@ -86,6 +68,5 @@ jQuery(document).ready(function($) {
     $("progress").click(function(event) {
         $(this).attr("value", event.offsetX/$(this).width()/0.8 * $(this).attr("max"));
     });
-    // $("*").removeAttr('contenteditable');
 
 });
