@@ -16,7 +16,7 @@ resume: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://koppl.in/indigo
+url: https://marcuskun.github.io
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
@@ -54,8 +54,8 @@ email: 1274662304@qq.com
 
 authors:
     johndoe:
-        name: John Doe
-        bio: A Man who travels the world eating noodles
+        name: Marcus Li
+        bio: 朝着自己定下的目标努力奋斗
         external-image: false
         picture: assets/images/profile.jpg
         twitter: johndoe
