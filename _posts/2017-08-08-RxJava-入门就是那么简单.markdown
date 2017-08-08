@@ -173,9 +173,9 @@ Observable.fromArray(...)
 `Flowable.create(FlowableOnSubscribe<T> source, BackpressureStrategy mode)`
 ### Flowable的几种Backpressure策略
 {% highlight raw %}
-> ** MISSING **
+> **MISSING**
 > 如果流的速度无法保持同步,可能会抛出MissingBackpressureException或IllegalStateException。
-** BUFFER **
+**BUFFER**
 > 上游不断的发出onNext请求，直到下游处理完，也就是和Observable一样了，缓存池无限大，最后直到程序崩溃
 **ERROR**
 > 会在下游跟不上速度时抛出MissingBackpressureException。
@@ -183,7 +183,7 @@ Observable.fromArray(...)
 > 会在下游跟不上速度时把onNext的值丢弃。
 **LATEST**
 > 会一直保留最新的onNext的值，直到被下游消费掉。
-{% endhighlight raw %}
+
 
 下面咱们通过一段代码来具体分析
 ```java
