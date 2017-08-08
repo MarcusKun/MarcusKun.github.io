@@ -1,9 +1,9 @@
 # main text of home
-name: John Doe
-bio: A Man who travels the world eating noodles
+name: MarcusLi
+bio: 大丈夫身居天地间,岂能郁郁久居人下
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: 个人博客咯
 
 # if it's an external image, update below for true
 # better with square images
@@ -56,7 +56,7 @@ email: 1274662304@qq.com
 authors:
     johndoe:
         name: Marcus Li
-        bio: 朝着自己定下的目标努力奋斗
+        bio: 大丈夫身居天地间,岂能郁郁久居人下
         external-image: false
         picture: assets/images/profile.jpg
         twitter: johndoe
