@@ -23,11 +23,24 @@ layout: compress
     {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
     {{ scss_sheet | scssify }}
     </style>
+	
+	<style type="text/css">
+		.panel-cover {
+		display: block;
+		position: fixed;
+		z-index: 900;
+		width: 100%;
+		max-width: none;
+		height: 100%;
+		background: url(/images/background-cover.jpg) top left no-repeat #666666;
+		background-size: cover; }
+    </style>
 
 </head>
 <body>
 
-    <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}" style="background-image: url('/assets/images/background-cover.jpg')">
+<div style="background-image: url('/assets/images/background-cover.jpg')">
+    <div class="panel-cover class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
         {% if page.tag %}
             <div class="post">
         {% else %}
@@ -45,6 +58,6 @@ layout: compress
     {% include icons.html %}
 
     {% include analytics-google.html %}
-
+</div>
 </body>
 </html>
