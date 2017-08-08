@@ -169,16 +169,16 @@ Observable.fromArray(...)
 解决这个问题的方法就是使用背压策略,在RxJava1.0中,如果使用Observeable的时候产生了背压问题系统是会抛MissingBackpressureException异常的,而在RxJava2.0中Observable不再支持背压，多出了`Flowable`(也是被观察者)来支持背压,当然了这里既然提到了一个新的被观察者,那么就不得不提它的搭档观察者了`Subscriber` 通常这两个是一起使用的,下面来看看使用`Flowable` 是如何使用背压策略的
 `Flowable.create(FlowableOnSubscribe<T> source, BackpressureStrategy mode)`
 ### Flowable的几种Backpressure策略
->**MISSING**
->如果流的速度无法保持同步,可能会抛出MissingBackpressureException或IllegalStateException。
+> **MISSING**
+> 如果流的速度无法保持同步,可能会抛出MissingBackpressureException或IllegalStateException。
 **BUFFER**
->上游不断的发出onNext请求，直到下游处理完，也就是和Observable一样了，缓存池无限大，最后直到程序崩溃
+> 上游不断的发出onNext请求，直到下游处理完，也就是和Observable一样了，缓存池无限大，最后直到程序崩溃
 **ERROR**
->会在下游跟不上速度时抛出MissingBackpressureException。
+> 会在下游跟不上速度时抛出MissingBackpressureException。
 **DROP**
->会在下游跟不上速度时把onNext的值丢弃。
+> 会在下游跟不上速度时把onNext的值丢弃。
 **LATEST**
->会一直保留最新的onNext的值，直到被下游消费掉。
+> 会一直保留最新的onNext的值，直到被下游消费掉。
 
 下面咱们通过一段代码来具体分析
 ```java
