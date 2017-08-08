@@ -100,4 +100,10 @@
             <svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg>
         </a>
     {% endif %}
+	
+	{% if site.qq %}
+        <a class="link" data-title="{{ site.qq }}" href="mailto:{{ site.qq }}">
+            <svg class="icon icon-qq"><use xlink:href="#icon-qq"></use></svg>
+        </a>
+    {% endif %}
 </div>
