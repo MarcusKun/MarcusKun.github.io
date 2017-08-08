@@ -39,8 +39,8 @@ layout: compress
 </head>
 <body>
 
-<div style="background-image: url('/assets/images/background-cover.jpg')">
-    <div class="panel-cover class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
+<div class="panel-cover" style="background-image: url('/assets/images/background-cover.jpg')">
+    <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
         {% if page.tag %}
             <div class="post">
         {% else %}
