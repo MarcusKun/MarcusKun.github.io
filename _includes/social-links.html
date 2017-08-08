@@ -94,6 +94,18 @@
             <svg class="icon icon-microphone"><use xlink:href="#icon-microphone"></use></svg>
         </a>
     {% endif %}
+	
+		{% if site.qq %}
+        <a class="link" data-title="{{ site.qq }}" href="mailto:{{ site.qq }}">
+            <svg class="icon icon-qq"><use xlink:href="#icon-qq"></use></svg>
+        </a>
+    {% endif %}
+	
+	{% if site.wechat %}
+        <a class="link" data-title="{{ site.wechat }}" href="mailto:{{ site.wechat }}">
+            <svg class="icon icon-wechat"><use xlink:href="#icon-wechat"></use></svg>
+        </a>
+    {% endif %}
 
     {% if site.email %}
         <a class="link" data-title="{{ site.email }}" href="mailto:{{ site.email }}">
@@ -101,9 +113,4 @@
         </a>
     {% endif %}
 	
-	{% if site.qq %}
-        <a class="link" data-title="{{ site.qq }}" href="mailto:{{ site.qq }}">
-            <svg class="icon icon-qq"><use xlink:href="#icon-qq"></use></svg>
-        </a>
-    {% endif %}
 </div>
