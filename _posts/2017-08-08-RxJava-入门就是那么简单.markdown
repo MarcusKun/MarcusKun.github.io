@@ -124,10 +124,12 @@ Observable.fromArray("1","2")
 ```
 打印的Log如下
 ![打印的Log](http://img.blog.csdn.net/20170518174843124?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMjE2ODAzOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
 从结果看出`map`和`flatMap`类似,都是对数据进行了变换,不同的是`flatMap`返回的是`Observeable`对象,我们可以把之前的事件处理以后放到一个新的`Observeable` 中,需要注意的是这个新的`Observeable` 并不是直接发送事件,它还是被放到了原先的`Observeable` 中由原先的`Observeable` 来发送事件,下面画个图来理解一下这个过程
 ![这里写图片描述](http://img.blog.csdn.net/20170519155735997?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMjE2ODAzOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 从图里可以看出,原先的`Observeable`序列中的事件经过变换,又变成了一个新的序列,最后再由原先`Observeable`把这些事件统一交给`Subscriber`的回调方法
 >当然了,类似的操作符还有很多,比如zip操作符,它就是把多个数据流合并到一处,最终发送到一个地方;总而言之,操作符的作用就是在事件发送过程中对数据进行处理的.
+
 ## 线程调度(Scheduler)
 说到这线程调度嘛,这就是RxJava另一个牛逼的地方了;利用RxJava给的Scheduler咱们可以随时随地的切换线程,这就是RxJava实现异步的方法,具体怎么使用呢,且听我娓娓道来.
 ### 案例
