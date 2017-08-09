@@ -26,7 +26,6 @@ layout: compress
 	
 	<style type="text/css">
 		.panel-cover {
-		display: block;
 		position: fixed;
 		z-index: 900;
 		width: 100%;
@@ -38,7 +37,7 @@ layout: compress
 	
 
 </head>
-<body class="{% if page.title == "Home" %} panel-cover {% endif %}">
+<body class="{% if page.title == "Home" %}panel-cover{% endif %}">
 
     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
         {% if page.tag %}
