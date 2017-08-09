@@ -28,7 +28,7 @@ layout: compress
 </head>
 <body>
 
-    <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}" style="{% if page.title == "Home" %}{{ background-image: url('/assets/images/background-cover.jpg') }}">
+    <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}" style="{% if page.title == "Home" %}{{ background-image: url('/assets/images/background-cover.jpg') }} {% endif %}">
         {% if page.tag %}
             <div class="post">
         {% else %}
