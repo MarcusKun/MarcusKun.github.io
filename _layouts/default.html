@@ -29,7 +29,7 @@ layout: compress
 </head>
 <body>
 
-<div style="{% if page.title == "Home" %}background: url(/assets/images/background-cover.jpg) top left no-repeat #FFFFFF;width: 100%;height: 100%;background-size: cover;position: fixed;z-index: 900;display: block;{% endif %}">
+<div style="{% if page.title == "Home" %}background: url(/assets/images/background-cover.jpg) center bottom no-repeat #FFFFFF;width: 100%;height: 100%;background-size: cover;position: fixed;z-index: 900;display: block;{% endif %}">
     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
         {% if page.tag %}
             <div class="post">
