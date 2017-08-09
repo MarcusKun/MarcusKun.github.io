@@ -24,9 +24,21 @@ layout: compress
     {{ scss_sheet | scssify }}
     </style>
 	
+	<style type="text/css">
+		.panel-cover {
+		display: block;
+		position: fixed;
+		z-index: 900;
+		width: 100%;
+		max-width: none;
+		height: 100%;
+		background: url(/assets/images/background-cover.jpg) top left no-repeat #000000;
+		background-size: cover; }
+	<style>
+	
 
 </head>
-<body style="{% if page.title == "Home" %} background-image: url('/assets/images/background-cover.jpg')  {% endif %}">
+<body class="{% if page.title == "Home" %} panel-cover {% endif %}">
 
     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
         {% if page.tag %}
