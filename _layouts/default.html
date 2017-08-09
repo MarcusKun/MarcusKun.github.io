@@ -27,14 +27,14 @@ layout: compress
 	
 
 </head>
-<body style="{% if page.title == "Home" %}background: url(/assets/images/background-cover.jpg) top left no-repeat #FFFFFF;width: 100%;height: 100%;background-size: cover;position: fixed;z-index: 900;display: block;{% endif %}">
+<body>
 
     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
         {% if page.tag %}
             <div class="post">
         {% else %}
             {% if showHeader != true %}
-                <div class="page {{ page.title | downcase }}">
+                <div class="page {{ page.title | downcase }}" style="{% if page.title == "Home" %}background: url(/assets/images/background-cover.jpg) top left no-repeat #FFFFFF;width: 100%;height: 100%;background-size: cover;position: fixed;z-index: 900;display: block;{% endif %}">
             {% else %}
                 <div class="{{ page.title | downcase }}">
             {% endif %}
