@@ -43,12 +43,12 @@ layout: compress
 
             {{ content }}
         </div>
+		<div class="{% if page.title == "Home" %}mainbgcover{% endif %}"></div>
     </div>
 
     {% include icons.html %}
 
     {% include analytics-google.html %}
-	<div class="{% if page.title == "Home" %}mainbgcover{% endif %}"></div>
 </div>
 </body>
 </html>
