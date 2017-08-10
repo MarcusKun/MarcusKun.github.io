@@ -41,14 +41,14 @@
         </div>
 		<div class="hideboxplay"></div>
 		<div class="givemoney_box-play">
-			<a class="shang_close-play" href="javascript:void(0)" onclick="dashangToggle()" title="关闭"><img src="/assets/images/givemoney/close.jpg" alt="取消" /></a>
+			<a class="givemoney_close-play" href="javascript:void(0)" onclick="dashangToggle()" title="关闭"><img src="/assets/images/givemoney/close.jpg" alt="取消" /></a>
 			<div class="shang_tit-play">
-			  <p>感谢您的支持，我会继续努力的!</p>
+			  <img class="selfie" src="{% if site.authors[page.author].external-image == true %}{{ site.authors[page.author].picture }}{% else %}{{ site.url }}/{{ site.authors[page.author].picture }}{% endif %}" alt="{{ site.authors[page.author].name }}" alt="author selfie">
 			</div>
-			<div class="shang_payimg">
+			<div class="givemoney_payimg">
 				<img src="/assets/images/givemoney/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
 			</div>
-			<div class="shang_payimg">    
+			<div class="givemoney_payimg">    
 				<img src="/assets/images/givemoney/weipayimg.jpg" alt="扫码支持" title="扫一扫" />
 			</div>
 			<div class="pay_explain">扫码打赏，你说多少就多少</div>
