@@ -29,7 +29,6 @@ layout: compress
 </head>
 <body>
 
-<div class="{% if page.title == "Home" %}mainbg{% endif %}">
     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
         {% if page.tag %}
             <div class="post">
@@ -49,6 +48,5 @@ layout: compress
     {% include icons.html %}
 
     {% include analytics-google.html %}
-</div>
 </body>
 </html>
