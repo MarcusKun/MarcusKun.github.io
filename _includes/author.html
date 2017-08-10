@@ -43,7 +43,7 @@
 		<div class="givemoney_box-play">
 			<a class="givemoney_close-play" href="javascript:void(0)" onclick="dashangToggle()" title="关闭"><img src="/assets/images/givemoney/close.jpg" alt="取消" /></a>
 			<div class="shang_tit-play">
-			  <img class="selfie" src="{% if site.authors[page.author].external-image == true %}{{ site.authors[page.author].picture }}{% else %}{{ site.url }}/{{ site.authors[page.author].picture }}{% endif %}" alt="{{ site.authors[page.author].name }}" alt="author selfie">
+			  <img class="selfie" src="{{ site.url }}/{{ site.authors[page.author].picture }}" alt="{{ site.authors[page.author].name }}" alt="author selfie">
 			</div>
 			<div class="givemoney_payimg">
 				<img src="/assets/images/givemoney/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
