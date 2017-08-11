@@ -16,32 +16,27 @@
     </div>
 	
 	<div class="hideboxplay"></div>
-		<div class="givemoney_box-play">
-			<div class="givemoney_close-play">
-				<a href="javascript:void(0)" onclick="dashangToggle()" title="关闭"><img src="/assets/images/givemoney/close.jpg" alt="取消" /></a>
+	<div class="givemoney_box-play">
+		<div class="givemoney_close-play">
+			<a href="javascript:void(0)" onclick="dashangToggle()" title="关闭"><img src="/assets/images/givemoney/close.jpg" alt="取消" /></a>
+		</div>
+		<div class="givemoney_tit-play">
+		  <img class="givemoney_myselfie" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" alt="{{ site.authors[page.author].name }}" alt="author selfie">
+		</div>
+		<div style="text-align:center">
+			<div style="float:left;width:50%">
+				<div ><img src="/assets/images/givemoney/alipayimg.jpg"></img></div>
+				<div ><img src="/assets/images/givemoney/alipay.png"></img></div>
 			</div>
-			<div class="givemoney_tit-play">
-			  <img class="givemoney_myselfie" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" alt="{{ site.authors[page.author].name }}" alt="author selfie">
-			</div>
-			<div class="givemoney_payimg" style="float:left">
-				<img src="/assets/images/givemoney/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
-			</div>
-			<div class="givemoney_payimg" style="float:right">    
-				<img src="/assets/images/givemoney/weipayimg.jpg" alt="扫码支持" title="扫一扫" />
-			</div>
-			<div class="pay_explain">扫码打赏，你说多少就多少</div>
-			<div class="shang_payselect">
-			  <div class="pay_item checked" data-id="alipay" style="float:left">
-				<span class="pay_logo"><img src="/assets/images/givemoney/alipay.png" alt="支付宝" /></span>
-			  </div>
-			  <div class="pay_item" data-id="weipay" style="float:right">
-				<span class="pay_logo"><img src="/assets/images/givemoney/wechat.png" alt="微信" /></span>
-			  </div>
-			</div>
-			<div class="shang_info-play">
-			  <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+			<div style="float:right;width:50%">
+				<div><img src="/assets/images/givemoney/weipayimg.jpg"></img></div>
+				<div><img src="/assets/images/givemoney/wechat.png" ></img></div>
 			</div>
 		</div>
+		<div class="shang_info-play">
+		  <p>扫码打赏，你说多少就多少</p>
+		</div>
+	</div>
 	
 	<script type="text/javascript">
 		function dashangToggle(){
