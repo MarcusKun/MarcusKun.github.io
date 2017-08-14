@@ -20,7 +20,7 @@
 		<div class="givemoney_close-play">
 			<a href="javascript:void(0)" onclick="dashangToggle()" title="关闭"><img src="/assets/images/givemoney/close.jpg" alt="取消" /></a>
 		</div>
-		<div class="givemoney_tit-play" style="background-color:green">
+		<div class="givemoney_tit-play">
 		  <img class="givemoney_myselfie" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" alt="{{ site.authors[page.author].name }}" alt="author selfie"></img>
 		</div>
 		<div style="text-align:center;display: inline-block;">
@@ -38,6 +38,8 @@
 	
 	<script type="text/javascript">
 		function dashangToggle(){
+		  var wHeight = $(window).height();
+		  $(".givemoney_box-play").height(wHeight / 2);
 		  $(".hideboxplay").fadeToggle();
 		  $(".givemoney_box-play").fadeToggle();
 		}
