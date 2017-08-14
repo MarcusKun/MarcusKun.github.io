@@ -45,13 +45,12 @@
 			count = count + $(this).height();
 		  });
 		  if(wWidth > wHeight){
-			$(".givemoney_box-play").height(wHeight / 2 + 20);
 			$(".givemoney_box-play").css("width","40%");
+			$(".givemoney_box-play").css("height","50%");
 		  }else if(wWidth < wHeight){
-			$(".givemoney_box-play").height(wHeight / 3 + 40);
 			$(".givemoney_box-play").css("width","80%");
+			$(".givemoney_box-play").css("height","50%");
 		  }
-		  $(".givemoney_box-play").height(count);
 		  $(".hideboxplay").fadeToggle();
 		  $(".givemoney_box-play").fadeToggle();
 		}
