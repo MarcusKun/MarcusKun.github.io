@@ -40,6 +40,10 @@
 		function dashangToggle(){
 		  var wHeight = $(window).height();
 		  var wWidth = $(window).width();
+		  var count = 0;
+		  $(".givemoney_box-play div").each(function(index,obj){
+			count = count + $(this).height();
+		  });
 		  if(wWidth > wHeight){
 			$(".givemoney_box-play").height(wHeight / 2 + 20);
 			$(".givemoney_box-play").css("width","40%");
@@ -47,6 +51,7 @@
 			$(".givemoney_box-play").height(wHeight / 3 + 40);
 			$(".givemoney_box-play").css("width","80%");
 		  }
+		  $(".givemoney_box-play").height(count);
 		  $(".hideboxplay").fadeToggle();
 		  $(".givemoney_box-play").fadeToggle();
 		}
