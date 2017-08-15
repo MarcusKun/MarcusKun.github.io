@@ -69,6 +69,16 @@ authors:
         picture: assets/images/james.jpg
         twitter: jamesfoster
 
+projects:
+    project1:
+        title: 项目1
+        link: www.baidu.com
+    project2:
+        title: 项目2
+        link: www.baidu.com    
+    project3:
+        title: 项目3
+        link: www.baidu.com    
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
