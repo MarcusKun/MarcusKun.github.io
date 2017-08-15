@@ -15,7 +15,7 @@ title: Projects
         {% endif %}
     {% endfor %}-->
 	{% for project in site.data.projects %}
-		<a class="url" href="{{ project.link }}">
+		<a class="url" href="{{ site.url }}{{ project.link }}">
 			<h3 class="title">{{ project.title }}</h3>
 		</a>
     {% endfor %}
