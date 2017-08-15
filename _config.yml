@@ -3,7 +3,7 @@ name: MarcusLi
 bio: 大丈夫身居天地间,岂能郁郁久居人下
 
 # twitter summary info
-description: 个人博客咯
+description: MarcusLi的个人博客
 
 # if it's an external image, update below for true
 # better with square images
@@ -58,7 +58,7 @@ email: 1274662304@qq.com
 authors:
     johndoe:
         name: Marcus Li
-        bio: 大丈夫身居天地间,岂能郁郁久居人下
+        bio: 不要只因一次失败,就放弃你原来决心想达到的目的
         external-image: false
         picture: assets/images/profile.jpg
         twitter: johndoe
