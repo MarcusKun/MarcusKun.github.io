@@ -14,7 +14,7 @@ title: Projects
             </div>
         {% endif %}
     {% endfor %}-->
-	{% for project in site.projects %}
+	{% for project in site.data.projects.projects %}
 		<a class="url" href="{{ project.link }}">
 			<h3 class="title">{{ project.title }}</h3>
 		</a>
