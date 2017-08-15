@@ -1,6 +1,6 @@
 # main text of home
 name: MarcusLi
-bio: 大丈夫身居天地间,岂能郁郁久居人下
+bio: 不要只因一次失败,就放弃你原来决心想达到的目的
 
 # twitter summary info
 description: MarcusLi的个人博客
@@ -62,23 +62,7 @@ authors:
         external-image: false
         picture: assets/images/profile.jpg
         twitter: johndoe
-    jamesfoster:
-        name: James Foster
-        bio: A Man who develops software with coffee
-        external-image: false
-        picture: assets/images/james.jpg
-        twitter: jamesfoster
-
-projects:
-    project1:
-        title: 项目1
-        link: www.baidu.com
-    project2:
-        title: 项目2
-        link: www.baidu.com    
-    project3:
-        title: 项目3
-        link: www.baidu.com    
+  
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
