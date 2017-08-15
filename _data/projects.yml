@@ -1,16 +1,14 @@
-projects:
-    project:
-        title: 测试
-        link: www.baidu.com
-    project:
-        title: 测试
-        link: www.baidu.com
-    project:
-        title: 测试
-        link: www.baidu.com
-    project:
-        title: 测试
-        link: www.baidu.com
-    project:
-        title: 测试
-        link: www.baidu.com        
+-title: 测试
+ link: www.baidu.com
+
+-title: 测试
+ link: www.baidu.com
+
+-title: 测试
+ link: www.baidu.com
+
+-title: 测试
+ link: www.baidu.com
+
+-title: 测试
+ link: www.baidu.com        
