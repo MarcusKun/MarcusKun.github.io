@@ -1,7 +1,11 @@
 - title: 我的个人网站项目
   link: MarcusKun.github.io
-  date: 2016-01-23 22:10
+  date: 2017-08-15 17:10
   
 - title: Retrofit的使用案例
   link: retrofit
-  date: 2016-01-23 22:10
+  date: 2017-08-22 10:00
+  
+- title: 常用Dialog的封装
+  link: DialogDemo
+  date: 2017-08-23 09:10  

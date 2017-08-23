@@ -14,7 +14,7 @@ title: Projects
             </div>
         {% endif %}
     {% endfor %}-->
-	{% for project in site.data.projects %}
+	{% for project in site.data.projects reversed%}
 		<div class="item">
 			<a class="url" href="https://github.com/MarcusKun/{{ project.link }}" target="_blank">
 				<aside><time datetime="{{ project.date | date:"%d-%m-%Y" }}">{{ project.date | date: "%b %d %Y" }}</time></aside>
